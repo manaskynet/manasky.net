@@ -1,0 +1,123 @@
+body {font: 13px 'Open Sans', Freesans, sans-serif;}
+
+/* Using local fonts? Check out Font Squirrel's webfont generator: http://www.fontsquirrel.com/tools/webfont-generator */
+
+/* We like off-black for text. */
+body, select, input, textarea {color: #333;}
+
+a {color: #03f; text-decoration: none;}
+a:hover {color: #69f;}
+
+/* Custom text-selection colors (remove any text shadows: http://twitter.com/miketaylr/status/12228805301) */
+::-moz-selection{background: #fcd700; color: #fff; text-shadow: none;}
+::selection {background: #fcd700; color: #fff; text-shadow: none;}
+
+/*	j.mp/webkit-tap-highlight-color */
+a:link {-webkit-tap-highlight-color: #fcd700;}
+
+ins {background-color: #fcd700; color: #000; text-decoration: none;}
+mark {background-color: #fcd700; color: #000; font-style: italic; font-weight: bold;}
+
+/* Mozilla dosen't style placeholders by default */
+input:-moz-placeholder { color:#a9a9a9; }
+textarea:-moz-placeholder { color:#a9a9a9; }
+
+/* let's give blockquotes *some* default styling, because unstyled blockquotes are dangerous */
+blockquote {padding: 16px; background: #eee;}
+
+
+nav {
+    opacity: 1;
+    position: relative;
+    height: 64px;
+    border: 0;
+    max-width: 1160px;
+    padding-left: 33px;
+    padding-right: 33px;
+    margin: 0 auto;
+
+    ul {
+        padding-top: 12px;
+
+        li {
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 40px;
+
+            span {
+                font-weight: 400;
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+main {
+    font: 14px / 18px 'Roboto',arial,sans-serif;
+
+    background: #eaebed no-repeat 50% 50% / auto 100%;
+    box-shadow: inset 0 0.125rem 0.25rem 0 rgba(0,0,0,.11);
+    // height: 550px;
+    height: calc(100vh - 64px);
+    // max-height: 760px;
+    position: relative;
+    color: #777;
+
+    h1 {
+        font-size: 5em;
+        font-weight: 200;
+        margin: 3vh 0 40px 0;
+        line-height: 1em;
+
+        @media (max-width: 480px) {
+            font-size: 3em;
+        }
+    }
+
+    .container {
+        top: 35%;
+        position: absolute;
+        text-align: center;
+        transform: translateY(-50%);
+        width: 100%;
+        margin: 0px auto;
+    }
+
+    img {
+        width: 235px;
+
+        @media (max-width: 480px) {
+            width: 90px;
+        }
+    }
+
+    .twitter-share-button {
+        margin-top: 20px;
+    }
+}
+
+footer {
+    background: none;
+}
+
+
+/* Media queries
+-------------------------------------------------------------------------------*/
+
+@media screen and (max-width: 480px) {
+
+}
+
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 992px) {
+    footer {
+        padding: 120px 0 40px 0;
+    }
+}
+
+@media (min-width: 1200px) {
+
+}
