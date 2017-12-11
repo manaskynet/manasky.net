@@ -75,7 +75,7 @@ main {
     }
 
     .container {
-        top: 35%;
+        top: 40%;
         position: absolute;
         text-align: center;
         transform: translateY(-50%);
@@ -93,6 +93,10 @@ main {
 
     .twitter-share-button {
         margin-top: 20px;
+    }
+
+    p {
+        margin-top: 1em;
     }
 }
 
